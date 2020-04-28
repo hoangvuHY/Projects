@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nutslide {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+}
+
+.nutslide li {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    background: gray;
+    border-radius: 50%;
+    text-indent: -9000px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nutslide li:hover {
+    background: black;
+}
+
+li.xanh {
+    background: #0000ffbf !important;
+}
+
+.anhslide ._1slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nut ul {
+    display: inline-block;
+}
+
+.nut ul li:hover {
+    background: red;
+}
+
+.nut ul li {
+    list-style: none;
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    background: gray;
+    border-radius: 50%;
+    text-indent: -9000px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.prev {
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 0;
+    cursor: pointer;
+}
+
+.nut {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-bottom: -87px;
+}
+
+._1slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.anhslide {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    text-align: center;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.apple {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.sangtrai {
+    animation: bienmat 1s forwards;
+    transform: translateX(0%);
+}
+
+@-webkit-keyframes bienmat {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.dituphaisang {
+    animation: sangbenphais 1s forwards;
+}
+
+@-webkit-keyframes sangbenphais {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.sangphai {
+    animation: bienmatphai 1s forwards;
+    transform: translateX(0%);
+}
+
+@-webkit-keyframes bienmatphai {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.ditutraisang {
+    animation: traisangss 1s forwards;
+}
+
+@-webkit-keyframes traisangss {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Code lai o day. Bat dau code moi */
+
+._1slide.bien-mat-o-ben-trai {
+    animation: bien-mat-o-ben-trai 1s forwards;
+}
+
+@-webkit-keyframes bien-mat-o-ben-trai {
+    0% {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+._1slide.di-vao-o-ben-phai {
+    animation: di-vao-o-ben-phai 1s forwards;
+}
+
+@-webkit-keyframes di-vao-o-ben-phai {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+._1slide.bien-mat-o-ben-phai {
+    animation: bien-mat-o-ben-phai 1s forwards;
+}
+
+@-webkit-keyframes bien-mat-o-ben-phai {
+    0% {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+._1slide.di-vao-o-ben-trai {
+    animation: di-vao-o-ben-trai 1s forwards;
+}
+
+@-webkit-keyframes di-vao-o-ben-trai {
+    0% {
+        transform: translateX(-100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+}

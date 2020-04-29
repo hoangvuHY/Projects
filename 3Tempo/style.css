@@ -1,4 +1,94 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+nav#navbarTempo li.nav-item a.nav-link {
+    color: #fffffff2;
+    font-weight: 600;
+    padding: 0 17px;
+    position: relative;
+    font-size: 15px;
+}
+
+#navbarTempo .navbar-nav .nav-item a.nav-link i {
+    font-size: 14px;
+    padding-left: 5px;
+    position: relative;
+    top: 1px;
+}
+
+nav#navbarTempo a.navbar-brand {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#navbarTempo .navbar-nav .nav-item a.nav-link.active::after, #navbarTempo .navbar-nav .nav-item a.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    background: #E43C5C;
+    left: 12px;
+    bottom: -10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    transform: scale(0);
+}
+
+#navbarTempo .navbar-nav .nav-item a.nav-link.active::after, #navbarTempo .navbar-nav .nav-item:hover a.nav-link::after {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: scale(1);
+}
+
+#navbarTempo .navbar-nav .nav-item:nth-child(6):hover .blockOne {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.blockOne, .blockTwo {
+    position: absolute;
+    width: 180px;
+    height: 226px;
+    background: white;
+    padding: 20px 0px 25px 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 33px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(35px);
+    transition: all 0.4s;
+}
+
+.blockTwo {
+    right: 180px;
+    transform: translateX(20px) translateY(25px);
+}
+
+.blockOne span a {
+    text-decoration: none;
+    color: #706668;
+}
+
+.blockOne span a:hover {
+    color: #5a3f45;
+}
+
+.blockOne span a i {
+    position: relative;
+    top: 1px;
+    left: 9px;
+}
+
+.blockOne span:nth-child(2):hover .blockTwo {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0) translateY(25px);
 }

@@ -1,4 +1,109 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.headers {
+    background: rgba(13, 10, 197, 0.89);
+}
+
+.headers .navbar-brand b {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.headers .navbar-nav li a.nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    margin: 0 5px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.headers .navbar-nav li.nav-item:hover a.nav-link {
+    color: white !important;
+}
+
+li.nav-item a.nav-link::after, .headers .navbar-nav li.nav-item a.nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #1ACC8D;
+    left: 7px;
+    bottom: 0;
+    transition: all 0.4s;
+    animation: leftRigt 0.4s forwards ease-out;
+    opacity: 0;
+}
+
+.headers .navbar-nav li.nav-item a.nav-link.active::after {
+    opacity: 1 !important;
+}
+
+li.nav-item a.nav-link::after {
+    width: 0;
+}
+
+li.nav-item:hover a.nav-link::after {
+    width: 25px;
+    opacity: 1 !important;
+}
+
+i.fas.fa-angle-down {
+    padding-left: 6px;
+    font-size: 15px;
+}
+
+.headers .navbar-nav li.nav-item:nth-child(7) {
+    position: relative;
+}
+
+.blockOne, .blockTwo {
+    position: absolute;
+    width: 180px;
+    height: 226px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 26px 0 26px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(-30px);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.blockOne .blockTwo {
+    left: -180px;
+    transform: translateX(23px) translateY(-18px);
+}
+
+.headers .navbar-nav li:nth-child(7):hover .blockOne {
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.blockOne a {
+    color: #01036fd9;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.blockOne a:hover {
+    color: #22CE91;
+}
+
+.blockOne i {
+    margin-left: 43px;
+}
+
+.blockOne span:nth-child(2):hover .blockTwo {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0) translateY(-18px);
 }

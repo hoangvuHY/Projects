@@ -9,7 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- FontsGoogle -->
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -20,8 +21,8 @@
     <title>Hello, world!</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbarDelicious" data-offset="0">
-    <nav id="navbarDelicious" class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+<body data-spy="scroll" data-target="#navbarDelicious" data-offset="60">
+    <nav id="navbarDelicious" class="navbar navbar-expand-sm fixed-top navbar-dark bg-transparent">
         <div class='container'>
             <div class="col-sm-3">
                 <a class='navbar-brand' href='#'>Deliciouss</a>
@@ -33,7 +34,7 @@
             </div>
             <div class='col-sm-9'>
                 <div class='collapse navbar-collapse float-xl-right' id='collapsibleNavId'>
-                    <ul class='navbar-nav nav'>
+                    <ul class='nav navbar-nav'>
                         <li class='nav-item '>
                             <a class='nav-link' href='#Home'>Home </a>
                         </li>
@@ -66,25 +67,193 @@
                             <a class='nav-link' href='#Book'>Book A Table </a>
                         </li>
 
-
-
                     </ul>
                 </div>
             </div>
         </div><!-- End container -->
+
     </nav>
 
-    <div>
-        <h4 id="Home">@fat</h4>
-        <p>...</p>
-        <h4 id="mdo">@mdo</h4>
-        <p>...</p>
-        <h4 id="one">one</h4>
-        <p>...</p>
-        <h4 id="two">two</h4>
-        <p>...</p>
-        <h4 id="three">three</h4>
-        <p>...</p>
+    <div id="Home" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#Home" data-slide-to="0" class="active"></li>
+            <li data-target="#Home" data-slide-to="1"></li>
+            <li data-target="#Home" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="../Delicious/assets/img/slide/slide-1.jpg" alt="First slide">
+
+                <article class="blockContentHome">
+                    <h2 class="titleHome">
+                        <b>Delicious</b>
+                        <strong>Restaurent</strong>
+                    </h2>
+                    <p>
+                        Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                        aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                        repellendus deleniti vel. Minus et tempore modi architecto.
+                    </p>
+                    <div class="groupButton">
+                        <button type="button" class="btn buttonOne">Out Menu</button>
+                        <button type="button" class="btn buttonTwo ">Book A Table</button>
+                    </div>
+                </article>
+            </div>
+            <div class="carousel-item">
+                <img src="../Delicious/assets/img/slide/slide-2.jpg" alt="First slide">
+
+                <article class="blockContentHome">
+                    <h2 class="titleHome">
+
+                        <strong>Lorem Ipsum Dolor</strong>
+                    </h2>
+                    <p>
+                        Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                        aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                        repellendus deleniti vel. Minus et tempore modi architecto.
+                    </p>
+                    <div class="groupButton">
+                        <button type="button" class="btn buttonOne">Out Menu</button>
+                        <button type="button" class="btn buttonTwo ">Book A Table</button>
+                    </div>
+                </article>
+            </div>
+            <div class="carousel-item">
+
+                <img src="../Delicious/assets/img/slide/slide-3.jpg" alt="First slide">
+
+                <article class="blockContentHome">
+                    <!--  -->
+                    <h2 class="titleHome">
+                        <strong>Sequi ea ut et est quaerat</strong>
+                    </h2>
+                    <p>
+                        Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                        aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                        repellendus deleniti vel. Minus et tempore modi architecto.
+                    </p>
+                    <div class="groupButton">
+                        <button type="button" class="  buttonOne">Out Menu</button>
+                        <button type="button" class=" buttonTwo ">Book A Table</button>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#Home" role="button" data-slide="prev">
+            <span class="buttonPrevHome fa fa-angle-left" aria-hidden="true"></span>
+
+        </a>
+        <a class="carousel-control-next" href="#Home" role="button" data-slide="next">
+            <span class="buttonNextHome fa  fa-angle-right" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="About">
+        <p>Culpa etiam tellus viverra. Curabitur habitasse, cillum, sagittis mollit vivamus quisque. Nibh. Harum
+            facilisi expedita, ultrices animi convallis, dignissim ultricies venenatis sapien possimus quidem excepturi
+            interdum fringilla. Natus, rhoncus ullam varius! Leo assumenda vivamus tempus pede, netus at et tellus. Erat
+            curae maxime minima voluptates inventore eget dignissim! Molestiae consectetur sunt pharetra temporibus dui.
+            Quidem? Pretium! Numquam, excepturi sequi consequat, consectetur magnam illo cum, cupidatat, mus primis
+            cupiditate adipiscing lobortis, ducimus vitae! Occaecat mattis fames soluta tempus aliquid, cum auctor
+            donec! Incididunt esse enim, deleniti accusantium condimentum augue sociosqu dicta, sequi, adipiscing mi,
+            quaerat totam, quas asperiores habitasse? Dolor. Iusto.</p>
+
+        <p>Ea eros vehicula aliquam commodo mauris. Aspernatur cumque libero, incididunt praesent risus nec, elit cum
+            voluptatum expedita, nesciunt, pharetra incididunt, nisl, pede facere iaculis risus aliqua, nascetur lectus,
+            alias deleniti ullamco. Provident, posuere deserunt placeat minim sem diam risus repudiandae cupiditate dui
+            mattis iaculis accusantium quam veritatis mattis dis architecto cupidatat praesentium tempore interdum sunt
+            tempor deserunt dictumst veritatis quo! Cras rutrum eu, distinctio quidem duis, aptent iure doloribus. Minus
+            massa congue do penatibus magna turpis esse, vel laoreet vero animi magnis qui, ad, adipiscing interdum
+            fugit ipsa risus sit scelerisque! Consectetur, labore quia officiis esse! Taciti aliquid iaculis. Egestas.
+        </p>
+
+        <p>Eiusmod nec ornare, nam ornare quia repudiandae sagittis ex sapien, donec, esse mattis, mollis, convallis in.
+            Libero? Pariatur ipsam necessitatibus aute dignissim in cum corporis phasellus quae error, do parturient in
+            nibh, sociosqu, platea aliquet soluta vitae, facere, eos rhoncus cursus hic. Metus consequuntur nostrum
+            distinctio iste, cum aliquam cupiditate occaecati per voluptatum quod torquent fames. Consequatur dictumst
+            molestias rutrum, qui labore labore, praesentium sapien ut dignissimos conubia orci hic. Exercitation
+            deleniti ipsam odit! Maecenas quidem totam modi esse pariatur ridiculus aut! Dicta proin veritatis congue
+            cursus mollis, facilis, maiores amet, venenatis eget molestie quisquam nec laboris ridiculus vel? Dolores.
+        </p>
+        <p>Culpa etiam tellus viverra. Curabitur habitasse, cillum, sagittis mollit vivamus quisque. Nibh. Harum
+            facilisi expedita, ultrices animi convallis, dignissim ultricies venenatis sapien possimus quidem excepturi
+            interdum fringilla. Natus, rhoncus ullam varius! Leo assumenda vivamus tempus pede, netus at et tellus. Erat
+            curae maxime minima voluptates inventore eget dignissim! Molestiae consectetur sunt pharetra temporibus dui.
+            Quidem? Pretium! Numquam, excepturi sequi consequat, consectetur magnam illo cum, cupidatat, mus primis
+            cupiditate adipiscing lobortis, ducimus vitae! Occaecat mattis fames soluta tempus aliquid, cum auctor
+            donec! Incididunt esse enim, deleniti accusantium condimentum augue sociosqu dicta, sequi, adipiscing mi,
+            quaerat totam, quas asperiores habitasse? Dolor. Iusto.</p>
+
+        <p>Ea eros vehicula aliquam commodo mauris. Aspernatur cumque libero, incididunt praesent risus nec, elit cum
+            voluptatum expedita, nesciunt, pharetra incididunt, nisl, pede facere iaculis risus aliqua, nascetur lectus,
+            alias deleniti ullamco. Provident, posuere deserunt placeat minim sem diam risus repudiandae cupiditate dui
+            mattis iaculis accusantium quam veritatis mattis dis architecto cupidatat praesentium tempore interdum sunt
+            tempor deserunt dictumst veritatis quo! Cras rutrum eu, distinctio quidem duis, aptent iure doloribus. Minus
+            massa congue do penatibus magna turpis esse, vel laoreet vero animi magnis qui, ad, adipiscing interdum
+            fugit ipsa risus sit scelerisque! Consectetur, labore quia officiis esse! Taciti aliquid iaculis. Egestas.
+        </p>
+
+        <p>Eiusmod nec ornare, nam ornare quia repudiandae sagittis ex sapien, donec, esse mattis, mollis, convallis in.
+            Libero? Pariatur ipsam necessitatibus aute dignissim in cum corporis phasellus quae error, do parturient in
+            nibh, sociosqu, platea aliquet soluta vitae, facere, eos rhoncus cursus hic. Metus consequuntur nostrum
+            distinctio iste, cum aliquam cupiditate occaecati per voluptatum quod torquent fames. Consequatur dictumst
+            molestias rutrum, qui labore labore, praesentium sapien ut dignissimos conubia orci hic. Exercitation
+            deleniti ipsam odit! Maecenas quidem totam modi esse pariatur ridiculus aut! Dicta proin veritatis congue
+            cursus mollis, facilis, maiores amet, venenatis eget molestie quisquam nec laboris ridiculus vel? Dolores.
+        </p>
+        <p>Culpa etiam tellus viverra. Curabitur habitasse, cillum, sagittis mollit vivamus quisque. Nibh. Harum
+            facilisi expedita, ultrices animi convallis, dignissim ultricies venenatis sapien possimus quidem excepturi
+            interdum fringilla. Natus, rhoncus ullam varius! Leo assumenda vivamus tempus pede, netus at et tellus. Erat
+            curae maxime minima voluptates inventore eget dignissim! Molestiae consectetur sunt pharetra temporibus dui.
+            Quidem? Pretium! Numquam, excepturi sequi consequat, consectetur magnam illo cum, cupidatat, mus primis
+            cupiditate adipiscing lobortis, ducimus vitae! Occaecat mattis fames soluta tempus aliquid, cum auctor
+            donec! Incididunt esse enim, deleniti accusantium condimentum augue sociosqu dicta, sequi, adipiscing mi,
+            quaerat totam, quas asperiores habitasse? Dolor. Iusto.</p>
+
+        <p>Ea eros vehicula aliquam commodo mauris. Aspernatur cumque libero, incididunt praesent risus nec, elit cum
+            voluptatum expedita, nesciunt, pharetra incididunt, nisl, pede facere iaculis risus aliqua, nascetur lectus,
+            alias deleniti ullamco. Provident, posuere deserunt placeat minim sem diam risus repudiandae cupiditate dui
+            mattis iaculis accusantium quam veritatis mattis dis architecto cupidatat praesentium tempore interdum sunt
+            tempor deserunt dictumst veritatis quo! Cras rutrum eu, distinctio quidem duis, aptent iure doloribus. Minus
+            massa congue do penatibus magna turpis esse, vel laoreet vero animi magnis qui, ad, adipiscing interdum
+            fugit ipsa risus sit scelerisque! Consectetur, labore quia officiis esse! Taciti aliquid iaculis. Egestas.
+        </p>
+
+        <p>Eiusmod nec ornare, nam ornare quia repudiandae sagittis ex sapien, donec, esse mattis, mollis, convallis in.
+            Libero? Pariatur ipsam necessitatibus aute dignissim in cum corporis phasellus quae error, do parturient in
+            nibh, sociosqu, platea aliquet soluta vitae, facere, eos rhoncus cursus hic. Metus consequuntur nostrum
+            distinctio iste, cum aliquam cupiditate occaecati per voluptatum quod torquent fames. Consequatur dictumst
+            molestias rutrum, qui labore labore, praesentium sapien ut dignissimos conubia orci hic. Exercitation
+            deleniti ipsam odit! Maecenas quidem totam modi esse pariatur ridiculus aut! Dicta proin veritatis congue
+            cursus mollis, facilis, maiores amet, venenatis eget molestie quisquam nec laboris ridiculus vel? Dolores.
+        </p>
+        <p>Culpa etiam tellus viverra. Curabitur habitasse, cillum, sagittis mollit vivamus quisque. Nibh. Harum
+            facilisi expedita, ultrices animi convallis, dignissim ultricies venenatis sapien possimus quidem excepturi
+            interdum fringilla. Natus, rhoncus ullam varius! Leo assumenda vivamus tempus pede, netus at et tellus. Erat
+            curae maxime minima voluptates inventore eget dignissim! Molestiae consectetur sunt pharetra temporibus dui.
+            Quidem? Pretium! Numquam, excepturi sequi consequat, consectetur magnam illo cum, cupidatat, mus primis
+            cupiditate adipiscing lobortis, ducimus vitae! Occaecat mattis fames soluta tempus aliquid, cum auctor
+            donec! Incididunt esse enim, deleniti accusantium condimentum augue sociosqu dicta, sequi, adipiscing mi,
+            quaerat totam, quas asperiores habitasse? Dolor. Iusto.</p>
+
+        <p>Ea eros vehicula aliquam commodo mauris. Aspernatur cumque libero, incididunt praesent risus nec, elit cum
+            voluptatum expedita, nesciunt, pharetra incididunt, nisl, pede facere iaculis risus aliqua, nascetur lectus,
+            alias deleniti ullamco. Provident, posuere deserunt placeat minim sem diam risus repudiandae cupiditate dui
+            mattis iaculis accusantium quam veritatis mattis dis architecto cupidatat praesentium tempore interdum sunt
+            tempor deserunt dictumst veritatis quo! Cras rutrum eu, distinctio quidem duis, aptent iure doloribus. Minus
+            massa congue do penatibus magna turpis esse, vel laoreet vero animi magnis qui, ad, adipiscing interdum
+            fugit ipsa risus sit scelerisque! Consectetur, labore quia officiis esse! Taciti aliquid iaculis. Egestas.
+        </p>
+
+        <p>Eiusmod nec ornare, nam ornare quia repudiandae sagittis ex sapien, donec, esse mattis, mollis, convallis in.
+            Libero? Pariatur ipsam necessitatibus aute dignissim in cum corporis phasellus quae error, do parturient in
+            nibh, sociosqu, platea aliquet soluta vitae, facere, eos rhoncus cursus hic. Metus consequuntur nostrum
+            distinctio iste, cum aliquam cupiditate occaecati per voluptatum quod torquent fames. Consequatur dictumst
+            molestias rutrum, qui labore labore, praesentium sapien ut dignissimos conubia orci hic. Exercitation
+            deleniti ipsam odit! Maecenas quidem totam modi esse pariatur ridiculus aut! Dicta proin veritatis congue
+            cursus mollis, facilis, maiores amet, venenatis eget molestie quisquam nec laboris ridiculus vel? Dolores.
+        </p>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -97,9 +266,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/570c37d290.js" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Easing jquery -->
+    <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
 
     <!-- My folder -->
     <script src="./main.js"></script>

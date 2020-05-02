@@ -4,12 +4,136 @@
     font-family: 'Lato', sans-serif;
 }
 
+/* Home */
+ 
+.blockTitleHome, .imageHome {
+    animation: goIto 1.5s forwards ease-in-out;
+}
+
+.imageHome {
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+@-webkit-keyframes goIto {
+    0% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+p.descriptionTitleHome {
+    font-size: 24px;
+    color: #D0D1ED;
+    margin-top: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+p.descriptionTitleHome+button {
+    width: 165px;
+    height: 46px;
+    background: #1ACC8D;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+p.descriptionTitleHome+button:hover {
+    background: #17B57D;
+    color: white;
+}
+
+p.descriptionTitleHome+button:focus {
+    box-shadow: none;
+}
+
+h1.titleHome span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #1ACC8D;
+    left: 0;
+    bottom: -8px;
+}
+
+h1.titleHome {
+    margin-top: 285px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #D0D1ED;
+    font-size: 50px;
+}
+
+h1.titleHome span {
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+article.brgHome::before {
+    content: '';
+    background: rgba(2, 5, 161, 0.91);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+body, html {
+    width: 100%;
+}
+
+article#Home {
+    background: url('../Bootslander/assets/img/hero-bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 830px;
+    position: relative;
+}
+
+article#Home img {
+    margin-top: 90px;
+    animation: up_down 2.2s alternate ease-in-out infinite;
+}
+
+@-webkit-keyframes up_down {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+/* End home */
+
+/*  navbar */
+
 .headers {
-    background: rgba(13, 10, 197, 0.89);
+    height: 70px;
+    background: rgba(13, 10, 197, 0);
+    transition: all 0.4s ease-in-out;
+}
+
+.scrollDown {
+    height: 60px;
+    background: rgba(1, 4, 136, 0.9) !important;
+    transition: all 0.4s;
 }
 
 .headers .navbar-brand b {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 900;
 }
 
@@ -107,3 +231,5 @@ i.fas.fa-angle-down {
     opacity: 1;
     transform: translateX(0) translateY(-18px);
 }
+
+/* End navbar */

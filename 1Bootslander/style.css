@@ -4,6 +4,72 @@
     font-family: 'Lato', sans-serif;
 }
 
+.rotateIcon {
+    transform: rotate(180deg);
+}
+
+i.far.fa-question-circle {
+    float: left;
+}
+
+button.btn.btn-link.collapsed  i.fas.fa-chevron-down {
+    float: right;
+    transform: rotate(0deg);
+}
+
+button.btn.btn-link i.fas.fa-chevron-down {
+    float: right;
+}
+
+button.btn.btn-link i.fas.fa-chevron-down.rotateIcon {float: right;}
+
+.card-body {
+    padding: 0 25px 15px;
+}
+
+button.btn.btn-link, button.btn.btn-link.collapsed:hover {
+    color: #1ACC8D;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    width: 100%;
+}
+
+button.btn.btn-link.collapsed span, button.btn.btn-link span {
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+}
+
+i.far.fa-question-circle {
+    color: #1ACC8D;
+}
+
+button.btn.btn-link.collapsed {
+    color: #343A40;
+}
+
+#Pricing .card {
+    margin-bottom: 15px;
+    border: none;
+}
+
+div.card-header {
+    background: white;
+    border: none;
+    padding: 15px 15px 0;
+    height: 65px;
+}
+
+article#Pricing {
+    padding-top: 60px;
+    background: #F5F5FF;
+}
+
+/* End Pricing */
+
+/* SlideComment */
+
 .comment {
     font-size: 17px;
     font-weight: 600;
@@ -73,9 +139,16 @@ ol.carousel-indicators li.active {
     margin-top: 60px;
     top: 0;
     left: 0;
+    margin-bottom: 60px;
 }
 
-div#slideComment::before {content: '';position: absolute;width: 100%;height: 100%;background: #1a1563c7;}
+div#slideComment::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1a1563c7;
+}
 
 /* End slide */
 

@@ -28,4 +28,11 @@ $(document).ready(function () {
         openEffect: 'easeInOutExpo',
         closeEffect: 'easeInOutExpo',
     });
+
+    $("button.btn.btn-link.collapsed").click(function (e) {
+        console.log("Da click");
+        e.preventDefault();
+        $("button.btn.btn-link .fa-chevron-down").removeClass("rotateIcon")
+        $("button.btn.btn-link .fa-chevron-down").toggleClass('rotateIcon');
+    });
 });

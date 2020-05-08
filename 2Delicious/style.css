@@ -8,6 +8,24 @@ body, html {
     padding: 0;
 }
 
+.controlSpecials .nav .nav-link {
+    border-right: 2px solid #E8E7E4;
+    border-radius: inherit;
+    color: #433F39;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+div#Specials .nav-link.active {
+    background: none;
+    border-right: 2px solid #FFB03B;
+    color: #FFB03B;
+}
+
+/* End specials */
+
+/* Menu */
+
 i.contentBlockMenu {
     display: block;
     float: left;
@@ -349,13 +367,13 @@ nav#navbarDelicious {
     background: #000000cc !important;
 }
 
-ul.navbar-nav.nav {
+#navbarDelicious ul.navbar-nav.nav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-a.navbar-brand {
+#navbarDelicious a.navbar-brand {
     font-family: 'Satisfy', cursive;
     font-size: 28px;
 }
@@ -383,7 +401,7 @@ nav#navbarDelicious .nav-item:nth-child(9) .nav-link:hover {
     background: #ffb03be0;
 }
 
-a.nav-link.active, a.nav-link:hover {
+#navbarDelicious a.nav-link.active, #navbarDelicious a.nav-link:hover {
     color: #FFB03B !important;
 }
 

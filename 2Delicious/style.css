@@ -8,11 +8,66 @@ body, html {
     padding: 0;
 }
 
+i.contentBlockMenu {
+    display: block;
+    float: left;
+    color: #9C958B;
+    font-size: 15px;
+    margin-top: -3px;
+}
+
+p.price {
+    float: right;
+    color: #444444;
+    font-weight: 800;
+}
+
+.blockMenu {
+    padding: 25px 10px;
+}
+
+.blockMenu .titleBlockMenu {
+    font-size: 17px;
+    font-weight: 800;
+    color: #FF9B08;
+    float: left;
+}
+
+h4.titleBlockMenu::after {
+    content: '. . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . ';
+    color: #DCDAD7;
+    font-size: 7px;
+}
+
+.buttonMenu {
+    margin-bottom: 46px;
+}
+
+.buttonMenu .buttons {
+    width: 95px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 0 5px;
+    color: #444444;
+    background: transparent;
+    border: 2px solid #FFB03B;
+    box-shadow: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+
+.buttonMenu .buttons.active, .buttonMenu .buttons:hover {
+    background: #FFB03B;
+    color: white;
+}
+
+/*End menu */
+
+/* Choose */
+
 p.contentChoose {
     transition: 0.5s;
 }
-
-/* Choose */
 
 .blockChoose {
     width: 350px;
@@ -22,15 +77,20 @@ p.contentChoose {
     transition: all 0.5s;
 }
 
-.blockChoose:hover  {
+.blockChoose:hover {
     background: #FFB03B;
     transition: all 0.5s;
 }
 
-.blockChoose:hover p,.blockChoose:hover h5 {transform: translateY(-20px);transition: all 0.5s;} 
-.blockChoose:hover  h5, .blockChoose:hover  p{
+.blockChoose:hover p, .blockChoose:hover h5 {
+    transform: translateY(-20px);
+    transition: all 0.5s;
+}
+
+.blockChoose:hover h5, .blockChoose:hover p {
     color: white;
 }
+
 .blockChoose .numberChoose {
     font-size: 28px;
     font-weight: 800;
@@ -47,18 +107,18 @@ p.numberChoose+h5 {
     transition: 0.5s;
 }
 
-.choose .titleChoose h5 {
+.titleChoose h5 {
     font-family: 'Satisfy', cursive;
     font-size: 32px;
     font-weight: 800;
     padding-top: 70px;
 }
 
-.choose .titleChoose h5 b {
+.titleChoose h5 b {
     color: #5F5950;
 }
 
-.choose .titleChoose h5 b+i {
+.titleChoose h5 b+i {
     color: #FFB03B;
 }
 

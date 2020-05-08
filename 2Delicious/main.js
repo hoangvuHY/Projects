@@ -35,4 +35,26 @@ $(document).ready(function () {
         }, 2000, 'easeInOutExpo');
     });
 
+    $('.blockBig').isotope({
+        itemSelector: ".blockBig .col-sm-6"
+    })
+
+    $("#Menu .buttonMenu .buttons").click(function (e) {
+        e.preventDefault();
+        $("#Menu .buttonMenu .buttons").removeClass('active');
+        $(this).addClass('active');
+        var dataClass = $(this).data('class');
+        console.log(dataClass);
+        dataClass = '.' + dataClass;
+        if (dataClass === '.All') {
+            $('.blockBig').isotope({
+                filter: "*"
+            })
+        } else {
+            $('.blockBig').isotope({
+                filter: dataClass
+            })
+        }
+    });
+
 });

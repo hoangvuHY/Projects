@@ -8,6 +8,66 @@ body, html {
     padding: 0;
 }
 
+p.contentChoose {
+    transition: 0.5s;
+}
+
+/* Choose */
+
+.blockChoose {
+    width: 350px;
+    height: 277px;
+    padding: 60px 30px;
+    box-shadow: 0px 0px 15px #add8e6cc;
+    transition: all 0.5s;
+}
+
+.blockChoose:hover  {
+    background: #FFB03B;
+    transition: all 0.5s;
+}
+
+.blockChoose:hover p,.blockChoose:hover h5 {transform: translateY(-20px);transition: all 0.5s;} 
+.blockChoose:hover  h5, .blockChoose:hover  p{
+    color: white;
+}
+.blockChoose .numberChoose {
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFCF88;
+    transition: 0.5s;
+}
+
+p.numberChoose+h5 {
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    font-weight: 800;
+    color: #6C665C;
+    padding-top: 5px;
+    transition: 0.5s;
+}
+
+.choose .titleChoose h5 {
+    font-family: 'Satisfy', cursive;
+    font-size: 32px;
+    font-weight: 800;
+    padding-top: 70px;
+}
+
+.choose .titleChoose h5 b {
+    color: #5F5950;
+}
+
+.choose .titleChoose h5 b+i {
+    color: #FFB03B;
+}
+
+/*  */
+
+/* end Choose */
+
+/* About  */
+
 #About .blockPlay {
     background: url(../Delicious/assets/img/about.jpg)no-repeat;
     height: 485px;
@@ -17,7 +77,8 @@ body, html {
 }
 
 #About {
-    margin-top: 60px;
+    padding: 60px 0;
+    background: #FFFAF3;
 }
 
 div#About .blockPlay .plays {

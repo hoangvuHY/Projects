@@ -2,7 +2,7 @@ $(document).ready(function () {
     var bodyTop = $('body').scrollTop();
     $(window).scroll(function () {
         var navbarTop = $("#navbarTempo").offset().top;
-        
+
         if (navbarTop > bodyTop + 10) {
             $("#navbarTempo").addClass("scrollMouseNavbar");
             $("#navbarTempo .navbar-brand").addClass("changeBrandNavbar");
@@ -24,4 +24,26 @@ $(document).ready(function () {
             scrollTop: posElement - 60
         }, 2000, "easeInOutExpo");
     });
+    $(".blockBig").isotope({
+        itemSelector: ".blockBig .isotopes"
+    })
+    $(".groupButton .buttons").click(function (e) {
+        e.preventDefault();
+        $(".groupButton .buttons").removeClass("active");
+        $(this).addClass("active");
+        var dataClass = $(this).data("class");
+        dataClass = "." + dataClass;
+        if (dataClass === '.all') {
+
+            $(".blockBig").isotope({
+                filter: "*"
+            })
+        } else {
+
+            $(".blockBig").isotope({
+                filter: dataClass
+            })
+        }
+    });
+
 });
